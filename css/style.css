@@ -1,0 +1,422 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(58, 34, 192);
+    box-sizing: border-box;
+}
+header {
+    height: 70px;
+}
+
+header h1{
+    display: inline-block;
+    float: left;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+
+header h1 a {
+    transition: .3s;
+}
+header h1 a:hover {
+    color: #FF3933;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    padding: 24px;
+    display: inline-block;
+}
+header ul li{
+    transition: .3s;
+}
+header ul li a:hover{
+    color: #FF3933;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+.mobile-menu{
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover{
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(16, 47, 80, .9);
+    transition: .3s;
+}
+
+.sidebar ul li a{
+    color: #fff;
+}
+
+.sidebar ul li{
+    padding: 24px;
+    transition: .3s;
+    transition-property: background-color;
+}
+
+.sidebar ul li:hover{
+    background-color: #FF3933;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+.banner{
+    background-color: #1f68B6;
+    padding: 150px 0;
+}
+section{
+    padding: 50px 0;
+}
+
+.banner img{
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px #ddd;
+    margin-bottom: 10px;
+}
+
+.banner h2,
+.banner p,
+.banner span{
+    color: #fff;
+    
+}
+.banner h2{
+    margin-bottom: 10px;
+}
+.banner p{
+    font-size: 18px;
+}
+.banner-left {
+    padding-left: 24px;
+}
+
+section h3{
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+section h3::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: #ddd;
+    left: calc(50% - 60px);
+}
+section h3::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 40px;
+    height: 4px;
+    background-color: rgb(252, 7, 7);
+    left: calc(50% - 20px);
+}
+
+#about p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+
+}
+
+#skills {
+    background-color: #e7d8d8;
+}
+#skills .bar{
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 5px 0 20px 0;
+}
+
+.bar .nilai{
+    height: 30px;
+    background-color: #FF3933;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+}
+
+.html{
+    width: 90%;
+}
+
+.css{
+    width: 80%;
+}
+.php{
+    width: 95%;
+}
+.ruby{
+    width: 90%;
+}
+
+.box-container{
+    padding: 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+}
+ 
+.box-1,.box-2,.box-3,.box-4,.box-5{
+    border-radius: 10px;
+    width: 100%;
+    height:390px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:2px 2px 18px rgba(0,0,0,0.3);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+}
+  
+.box-1,
+.box-2, 
+.box-3, 
+.box-4, 
+.box-5 {
+    background-image:url("https://www.kibrispdr.org/dwn/0/black-star-wallpaper.jpg");
+}
+ 
+.box-1 img,
+.box-2 img,
+.box-3 img,
+.box-4 img,
+.box-5 img{
+    width: 130px;
+    border-radius:50%;
+    background-color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.box-1 h1,
+.box-2 h1,
+.box-3 h1,
+.box-4 h1,
+.box-5 h1{
+    color:#FFFFFF;
+    font-family: calibri;
+    font-size: 23px;
+    line-height:0px;
+    margin: 50px 0px 20px 0px;
+}
+
+.box-1 p,
+.box-2 p,
+.box-3 p,
+.box-4 p,
+.box-5 p{
+    font-family: calibri;
+    color: white;
+    text-align:center;
+    width: 160px;
+    margin:2px 2px 2px 2px;
+}
+
+.box-1 button,
+.box-2 button,
+.box-3 button,
+.box-4 button,
+.box-5 button{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    background-color: white;
+    color: black;
+    margin: 30px 0px 5px 0px;
+    align-items: bottom;
+}
+.contact-form{
+    height: 500px;
+    background-color:#3d4396;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-text{
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+ 
+.contact-text h1 {
+    font-family: calibri;
+    font-weight:bold;
+    color:#1d1c1c;
+    font-size:30px;
+    line-height:0px;
+    text-align: center;
+    margin: 40px 0px;
+}
+ 
+.contacts{
+    padding: 30px 10px;
+    display:flex;
+    justify-content:space-between;
+}
+ 
+.contact{
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 0 auto
+    text-align: center;
+    background-color: #f4f2f4;
+    padding: 20px 20px;
+    cursor: pointer;
+    width: 400px;
+    height: 400px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+input, textarea {
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #dee7ec;
+    font-family: calibri;
+    border-radius: 10px;
+}
+
+textarea{
+    resize: none;
+    height: 60px;
+}
+
+.contact-submit{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    background-color: black;
+    color: white;
+    margin: 20px auto;
+}
+
+.contact-submit:active{
+    transform: scale(1.1);
+}
+
+.contacts img{
+    width: 400px;
+    height: 300px;
+    margin: 70px 25px;
+}
+
+.contacts p{
+    padding: 0;
+    font-family: calibri;
+    font-size: 16px;
+}
+.countainer-col{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+  html{
+      scroll-behavior: smooth;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Quicksand:wght@500&display=swap');
+  body{
+      line-height: 1.5;
+      font-family: 'Poppins', sans-serif;
+  }
+
+@media (max-width: 768px){
+    .mobile-menu{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+    .box-container{
+        display: block;
+    }
+    .contact-form{
+        display: block;
+    }
